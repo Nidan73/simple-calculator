@@ -16,17 +16,18 @@ buttons.forEach((btn) => {
     } else if (value === "%") {
       current = current / 100;
       display.textContent = current;
+    } else if (value === "X") {
+      current += "*";
+      display.textContent = current;
     } else if (value === "=") {
-      // Calculate the result
       try {
-        current = eval(current); // ⚠️ demo only
+        current = eval(current);
         display.textContent = current;
       } catch {
         display.textContent = "Error";
         current = "";
       }
     } else {
-      // Append the button text
       current += value;
       display.textContent = current;
     }
