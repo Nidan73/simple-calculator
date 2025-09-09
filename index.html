@@ -3,7 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- added daisyui + tailwindcss -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Caluclator</title>
   </head>
-  <body></body>
+  <body>
+    <section class="flex justify center bg-slate-950">
+      <div
+        class="bg-gray-700 h-[30rem] w-[40rem] mx-auto my-[10rem] rounded-xl"
+      >
+        <div id="display" class="bg-white h-16 p-7 my-8 mx-10 text-2xl"></div>
+        <div class="grid grid-cols-4 gap-4 mx-4">
+          <button
+            class="btn btn-soft btn-info rounded-xl text-black bg-yellow-500 text-2xl"
+          >
+            AC
+          </button>
+          <button
+            class="btn btn-soft btn-info rounded-xl text-black bg-yellow-500 text-2xl"
+          >
+            CE
+          </button>
+          <button class="btn btn-soft btn-info rounded-xl text-2xl">%</button>
+          <button class="btn btn-soft btn-info rounded-xl text-2xl">/</button>
+          <button class="btn btn-soft btn-info rounded-xl text-2xl">1</button>
+          <button class="btn btn-soft btn-info rounded-xl text-2xl">2</button>
+          <button class="btn btn-soft btn-info rounded-xl text-2xl">3</button>
+          <button class="btn btn-soft btn-info rounded-xl text-2xl">X</button>
+          <button class="btn btn-soft btn-info rounded-xl text-2xl">4</button>
+          <button class="btn btn-soft btn-info rounded-xl text-2xl">5</button>
+          <button class="btn btn-soft btn-info rounded-xl text-2xl">6</button>
+          <button class="btn btn-soft btn-info rounded-xl text-2xl">-</button>
+          <button class="btn btn-soft btn-info rounded-xl text-2xl">7</button>
+          <button class="btn btn-soft btn-info rounded-xl text-2xl">8</button>
+          <button class="btn btn-soft btn-info rounded-xl text-2xl">9</button>
+          <button
+            class="btn btn-soft btn-info rounded-xl text-2xl row-span-2 h-full"
+          >
+            +
+          </button>
+          <button class="btn btn-soft btn-info rounded-xl text-2xl">0</button>
+          <button class="btn btn-soft btn-info rounded-xl text-2xl">.</button>
+          <button class="btn btn-soft btn-info rounded-xl text-2xl">=</button>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
 </html>
